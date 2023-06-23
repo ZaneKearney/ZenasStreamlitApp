@@ -13,6 +13,6 @@ my_cur.execute("show views in SCHEMA ZENAS_ATHLEISURE_DB.products;")
 my_data_rows = my_cur.fetchall()
 streamlit.dataframe(my_data_rows)
 
-my_cur.execute("select * from ZENAS_ATHLEISURE_DB.products.catalog_for_website")
+my_cur.execute("select * from catalog_for_website")
 my_catalog = my_cur.fetchall()
 streamlit.dataframe(my_catalog)
